@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CarXpress - Tata Cars</title>
+  <link rel="stylesheet" href="tata.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">CARS</a></li>
+        <li><a href="#">DEALERS</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">IMAGES</a></li>
+        <li><a href="#">VIDEOS</a></li>
+        <li><a href="#">ROAD TEST</a></li>
+        <li><a href="#">OFFERS</a></li>
+        <li><a href="#">SERVICE CENTERS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="title-section">
+      <h2>Tata cars <span>★ 4.5/5 | 7.2K reviews</span></h2>
+      
+      <h3>Tata car models 
+        <a href="#" id="changeBrandBtn" class="change-brand-link">Change Brand</a>
+      </h3>
+      <!-- Brand Selection Modal -->
+<div id="brandModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <select id="brandSelect">
+      <option disabled selected>Change Brand</option>
+      <optgroup label="POPULAR BRANDS">
+        <option value="../../maruti-suzuki.html">Maruti</option>
+        <option>Tata</option>
+        <option>Kia</option>
+        <option>Toyota</option>
+        <option>Hyundai</option>
+        <option>Mahindra</option>
+        <option>Honda</option>
+        <option>Renault</option>
+      </optgroup>
+    </select>
+  </div>
+</div>
+
+
+<!-- 
+<select id="brandSelect">
+  <option disabled selected>Choose a Brand</option>
+  <optgroup label="POPULAR BRANDS">
+    <option value="maruti-suzuki.html">Maruti</option>
+    <option value="tata/tata.html">Tata</option>
+    <option value="#">Kia</option>
+    <option value="#">Toyota</option>
+    <option value="#">Hyundai</option>
+    <option value="#">Mahindra</option>
+    <option value="#">Honda</option>
+    <option value="#">Renault</option>
+  </optgroup>
+</select> -->
+
+
+
+
+
+
+
+      <p>Tata has a total of 15 car models available in India right now, including <b>5 Hatchbacks, 3 Sedans, 4 SUVs</b> and <b>3 MUVs</b>. The starting price for a Tata car is ₹4.99 Lakh for the Tata Tiago, while the Tata Safari is the most expensive model at ₹24.99 Lakh. <a href="#">Read More</a></p>
+    </section>
+
+    <section class="cars-listing">
+      <div class="car-card">
+        <img src="Tata Nexon.jpg" alt="Tata Nexon" />
+        <div class="car-details">
+          <h3>Tata Nexon</h3>
+          <p class="price">₹7.59 - 13.14 Lakh*</p> 
+          <p class="specs">Petrol/Diesel • 21.50 kmpl • Manual/Automatic</p>
+          <p class="ratings">1199 cc • 118.36 bhp • 5 Star Safety</p>
+          <button class="offer-btn">View August Offers</button>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="Tata Harrier.jpg" alt="Tata Harrier" />
+        <div class="car-details">
+          <h3>Tata Harrier</h3>
+          <p class="price">₹14.99 - 22.00 Lakh*</p>
+          <p class="specs">Diesel • 17.00 kmpl • Manual/Automatic</p>
+          <p class="ratings">1956 cc • 167.67 bhp • 5 Star Safety</p>
+          <button class="offer-btn">View August Offers</button>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="Tata Tiago.jpg" alt="Tata Tiago" />
+        <div class="car-details">
+          <h3>Tata Tiago</h3>
+          <p class="price">₹4.99 - 7.50 Lakh*</p>
+          <p class="specs">Petrol/CNG • 23.84 kmpl • Manual/Automatic</p>
+          <p class="ratings">1199 cc • 84.48 bhp • 4 Star Safety</p>
+          <button class="offer-btn">View August Offers</button>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="Tata Altroz.jpeg" alt="Tata Altroz" />
+        <div class="car-details">
+          <h3>Tata Altroz</h3>
+          <p class="price">₹5.29 - 9.29 Lakh*</p>
+          <p class="specs">Petrol/Diesel • 22.95 kmpl • Manual/Automatic</p>
+          <p class="ratings">1199 cc • 86.00 bhp • 5 Star Safety</p>
+          <button class="offer-btn">View August Offers</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="ad-box">
+        <img src="tata.avif" alt="CarXpress ad" />
+      </div>
+      <div class="popular-brands">
+        <h4>Popular brands</h4>
+        <div class="brands-grid">
+          <span>Maruti</span>
+          <span>Kia</span>
+          <span>Hyundai</span>
+          <span>Toyota</span>
+          <span>Honda</span>
+          <span>Renault</span>
+          <span>MG</span>
+          <span>Skoda</span>
+          <span>Nissan</span>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+ 
+
+<section class="car-options-section">
+  <div class="car-options-container">
+    <h3>Tata car options</h3>
+
+    <!-- Tabs -->
+    <div class="car-options-tabs">
+      <ul class="tabs">
+        <li class="active" data-tab="budget">By Budget</li>
+        <li data-tab="body">By Body Type</li>
+        <li data-tab="fuel">By Fuel</li>
+        <li data-tab="transmission">By Transmission</li>
+        <li data-tab="features">By Features</li>
+        <li data-tab="seating">By Seating Capacity</li>
+      </ul>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content active" id="tab-budget">
+      <button class="car-option-btn">Tata Cars under 5 lakh</button>
+      <button class="car-option-btn">Tata Cars under 10 lakh</button>
+      <button class="car-option-btn">Tata Cars under 15 lakh</button>
+      <button class="car-option-btn">Tata Cars under 20 lakh</button>
+      <button class="car-option-btn">Tata Cars under 35 lakh</button>
+    </div>
+
+    <div class="tab-content" id="tab-body">
+      <button class="car-option-btn">Hatchback</button>
+      <button class="car-option-btn">Sedan</button>
+      <button class="car-option-btn">SUV</button>
+      <button class="car-option-btn">MUV</button>
+    </div>
+
+    <div class="tab-content" id="tab-fuel">
+      <button class="car-option-btn">Petrol</button>
+      <button class="car-option-btn">Diesel</button>
+      <button class="car-option-btn">CNG</button>
+      <button class="car-option-btn">Electric</button>
+    </div>
+
+    <div class="tab-content" id="tab-transmission">
+      <button class="car-option-btn">Manual</button>
+      <button class="car-option-btn">Automatic</button>
+      <button class="car-option-btn">AMT</button>
+    </div>
+
+    <div class="tab-content" id="tab-features">
+      <button class="car-option-btn">Sunroof</button>
+      <button class="car-option-btn">Cruise Control</button>
+      <button class="car-option-btn">Wireless Charging</button>
+    </div>
+
+    <div class="tab-content" id="tab-seating">
+      <button class="car-option-btn">5 Seater</button>
+      <button class="car-option-btn">6 Seater</button>
+      <button class="car-option-btn">7 Seater</button>
+    </div>
+  </div>
+</section>
+
+ <script src="tata.js"></script>
+</body>
+</html>
