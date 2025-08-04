@@ -23,3 +23,18 @@ function animate() {
 }
 setInterval(animate, 3000);
 
+
+
+const rangeKey = tab.dataset.range;
+const [minPrice, maxPrice] = ranges[rangeKey];
+
+carCards.forEach(card => {
+  const cardMin = parseInt(card.dataset.priceMin);
+  const cardMax = parseInt(card.dataset.priceMax);
+  const isInRange = cardMax >= minPrice && cardMin <= maxPrice;
+  card.style.display = isInRange ? "block" : "none";
+});
+
+// Optional: update view all link text
+const viewAll = document.querySelector(".view-all");
+viewAll.textContent = `View All Cars Under ${tab.textContent}`;
