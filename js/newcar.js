@@ -45,3 +45,59 @@ brandSelect.addEventListener('change', function() {
     modelSelect.style.display = 'none';
   }
 });
+
+// Toggle between BY BUDGET and BY MODEL tabs
+document.addEventListener('DOMContentLoaded', function () {
+  const budgetTab = document.getElementById('budget-tab');
+  const modelTab = document.getElementById('model-tab');
+  const budgetOptions = document.getElementById('budget-options');
+  const modelOptions = document.getElementById('model-options');
+
+  budgetTab.addEventListener('click', () => {
+    budgetTab.classList.add('active');
+    modelTab.classList.remove('active');
+    budgetOptions.classList.remove('hidden');
+    modelOptions.classList.add('hidden');
+  });
+
+  modelTab.addEventListener('click', () => {
+    modelTab.classList.add('active');
+    budgetTab.classList.remove('active');
+    modelOptions.classList.remove('hidden');
+    budgetOptions.classList.add('hidden');
+  });
+});
+
+
+document.getElementById("btn-budget").addEventListener("click", function () {
+document.getElementById("budget-form").style.display = "flex";
+document.getElementById("model-form").style.display = "none";
+this.classList.add("active");
+document.getElementById("btn-model").classList.remove("active");
+});
+
+document.getElementById("btn-model").addEventListener("click", function () {
+document.getElementById("budget-form").style.display = "none";
+document.getElementById("model-form").style.display = "flex";
+this.classList.add("active");
+document.getElementById("btn-budget").classList.remove("active");
+});
+
+
+
+
+
+const rangeKey = tab.dataset.range;
+const [minPrice, maxPrice] = ranges[rangeKey];
+
+carCards.forEach(card => {
+  const cardMin = parseInt(card.dataset.priceMin);
+  const cardMax = parseInt(card.dataset.priceMax);
+  const isInRange = cardMax >= minPrice && cardMin <= maxPrice;
+  card.style.display = isInRange ? "block" : "none";
+});
+
+// Optional: update view all link text
+const viewAll = document.querySelector(".view-all");
+viewAll.textContent = `View All Cars Under ${tab.textContent}`;
+

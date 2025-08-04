@@ -227,3 +227,119 @@ body { margin:0; background: var(--bg); color:#333; }
   .search-card { width:100%; margin-top:20px; }
   .hero { padding:30px 20px; height:auto; }
 }
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.price-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.price-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.price-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.tab:hover,
+.tab.active {
+  color: #ff5722;
+  border-color: #ff5722;
+}
+
+.car-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.car-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 250px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.car-card h4 {
+  margin: 10px 0 4px;
+}
+
+.car-card p {
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.car-card button {
+  background-color: #ff5722;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.car-card button:hover {
+  background-color: #fff;
+  color: #ff5722;
+  border-color: #ff5722;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff5722;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.view-all span {
+  display: inline-block;
+  transform: translateY(1px);
+  margin-left: 4px;
+}
+
+
+
