@@ -13,34 +13,95 @@ body {
   text-decoration:none; 
   margin-left:5px; }
 
-.main-nav { display:flex; justify-content:space-between;
-  align-items:center; padding:15px 20px; background:#fff; border-bottom:1px solid #eee; }
-.logo a { font-size:1.5rem; text-decoration:none; color:#0D1F3C; }
-.menu { list-style:none; display:flex; gap:15px; margin:0; }
-.menu li a { text-decoration:none; color:#333; padding:5px; }
+.main-nav { 
+  display:flex; 
+  justify-content:space-between;
+  align-items:center; 
+  padding:15px 20px; 
+  background:#fff; 
+  border-bottom:1px solid #eee; 
+}
+.logo a { 
+  font-size:1.5rem; 
+  text-decoration:none; 
+  color:#0D1F3C; 
+}
+.menu { 
+  list-style:none; 
+  display:flex; 
+  gap:15px; 
+  margin:0; 
+}
+.menu li a { 
+  text-decoration:none; 
+  color:#333; 
+  padding:5px; 
+}
 
-.hero { position:relative; height:400px; overflow:hidden; }
-.hero-bg { width:100%; height:100%; object-fit:cover; filter: brightness(70%); }
+.hero { 
+  position:relative; 
+  height:400px; 
+  overflow:hidden; 
+}
+.hero-bg { 
+  width:100%; 
+  height:100%; 
+  object-fit:cover; 
+  filter: brightness(70%); 
+}
 .search-container {
-  position:absolute; bottom:30px; left:50%; transform:translateX(-50%);
-  background:rgba(255,255,255,0.9); padding:15px; border-radius:8px;
-  display:flex; gap:10px; align-items:center;
+  position:absolute; 
+  bottom:30px; left:50%; 
+  transform:translateX(-50%);
+  background:rgba(255,255,255,0.9); 
+  padding:15px; 
+  border-radius:8px;
+  display:flex; 
+  gap:10px; 
+  align-items:center;
 }
 .search-container input,
-.search-container select { padding:10px; border:1px solid #ccc; border-radius:4px; }
+.search-container select { 
+  padding:10px; 
+  border:1px solid #ccc; 
+  border-radius:4px; 
+}
 .search-container button {
-  background:#28a745; color:#fff; border:none; padding:10px 20px;
-  border-radius:4px; cursor:pointer;
+  background:#28a745; 
+  color:#fff; 
+  border:none; 
+  padding:10px 20px;
+  border-radius:4px; 
+  cursor:pointer;
 }
 
-.featured { padding:40px 20px; text-align:center; }
-.featured h2 { margin-bottom:20px; color:#0D1F3C; }
-#carousel { display:flex; overflow-x:auto; gap:10px; }
-#carousel figure {
-  margin:0; height:200px ;width:200px; flex:0 0 auto;
-  scroll-snap-align:start; position:relative;
+.featured { 
+  padding:40px 20px; 
+  text-align:center; 
 }
-#carousel img { width:100%; display:block; border-radius:6px; }
+
+.featured h2 { 
+  margin-bottom:20px; 
+  color:#0D1F3C; 
+}
+
+#carousel { 
+  display:flex; 
+  overflow-x:auto; 
+  gap:10px; }
+
+#carousel figure {
+  margin:0; 
+  height:200px ;
+  width:200px; 
+  flex:0 0 auto;
+  scroll-snap-align:start; 
+  position:relative;
+}
+#carousel img { 
+  width:100%; 
+  display:block; 
+  border-radius:6px; }
 
 /* scrollbar simplified 
 #carousel::-webkit-scrollbar { height:8px; }
@@ -194,3 +255,127 @@ body {
 .search-btn:hover {
   background: #e64a19;
 }
+
+
+
+@media (max-width:1100px){
+  .hero-inner { flex-wrap:wrap; }
+  .search-card { width:100%; margin-top:20px; }
+  .hero { padding:30px 20px; height:auto; }
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.price-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.price-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.price-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.tab:hover,
+.tab.active {
+  color: #ff5722;
+  border-color: #ff5722;
+}
+
+.car-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.car-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 250px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.car-card h4 {
+  margin: 10px 0 4px;
+}
+
+.car-card p {
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.car-card button {
+  background-color: #ff5722;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.car-card button:hover {
+  background-color: #fff;
+  color: #ff5722;
+  border-color: #ff5722;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff5722;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.view-all span {
+  display: inline-block;
+  transform: translateY(1px);
+  margin-left: 4px;
+}
+
+
+
