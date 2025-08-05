@@ -8,8 +8,8 @@
 </head>
 <body>
 
-    <!-- top header -->
-<header class="top-header">
+  <!-- Top header -->
+  <header class="top-header">
     <div class="contact-info">
       <span> 1-800-123-4567</span>
       <span> Noida, Sector-62</span>
@@ -19,19 +19,38 @@
     </div>
   </header>
 
-<!-- Main Navigation Header -->
-<header class="main-header">
-    
-  <div class="logo">CarXpress</div>
+  <!-- Navbar -->
   <nav class="main-nav">
-    <ul>
-      <li><a href="#">New Cars ▾</a></li>
-      <li><a href="#">Pages ▾</a></li>
-      <li><a href="#">Blog</a></li>
+    <div class="logo"><a href="#">CarXpress</a></div>
+    <ul class="menu">
+      <li class="dropdown">
+        <a href="#">New Cars ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="./newcar.html">Explore New Cars</a></li>
+          
+           <li class="dropdown-sub">
+        <a href="#">Popular Brands ▸</a>
+        <ul class="dropdown-submenu">
+          <li><a href="./maruti-suzuki.html">Maruti Cars</a></li>
+          <li><a href="./tata.html">Tata Cars</a></li>
+        </ul>
+      </li>
+        
+        </ul>
+      </li>
+      <li><a href="./reviews.html">News & Rewiews</a></li>
+      <li class="dropdown">
+        <a href="#">Pages ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </li>
+      <li><a href="./blog.html">Blog</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-</header>
 
 
 
@@ -65,19 +84,19 @@
       <h2>Recommended Car Reviews</h2>
       <div class="review-cards">
         <div class="review-card">
-          <img src="../images/" alt="Car 1" />
+          <img src="../images/Maruti.suzuki.jpg" alt="Car 1" />
           <h3>Maruti Swift</h3>
           <p>Fun drive, smooth engine, best for city.</p>
           <a href="#">Read Review</a>
         </div>
         <div class="review-card">
-          <img src="Tata Nexon.jpg" alt="Car 2" />
+          <img src="../images/Tata Nexon.jpg" alt="Car 2" />
           <h3>Tata Nexon</h3>
           <p>Rugged and feature-packed SUV.</p>
           <a href="#">Read Review</a>
         </div>
         <div class="review-card">
-          <img src="Tata Altroz.jpeg" alt="Car 3" />
+          <img src="../images/Tata Altroz.jpeg" alt="Car 3" />
           <h3>Tata Altroz</h3>
           <p>Stylish design with great mileage.</p>
           <a href="#">Read Review</a>
@@ -90,21 +109,21 @@
       <h2>Rate and review your favorite car</h2>
       <div class="rating-cards">
         <div class="rating-card">
-          <img src="Maruti.suzuki.jpg" alt="Car 4" />
+          <img src="../images/Maruti.suzuki.jpg" alt="Car 4" />
           <h3>Maruti Swift</h3>
           <div class="stars" data-car="swift">
             ★★★★★
           </div>
         </div>
         <div class="rating-card">
-          <img src="MarutiPunch.jpg" alt="Car 5" />
+          <img src="../images/MarutiPunch.jpg" alt="Car 5" />
           <h3>Tata Punch</h3>
           <div class="stars" data-car="punch">
             ★★★★★
           </div>
         </div>
         <div class="rating-card">
-          <img src="Tata Altroz.jpeg" alt="Car 6" />
+          <img src="../images/Tata Altroz.jpeg" alt="Car 6" />
           <h3>Tata Altroz</h3>
           <div class="stars" data-car="altroz">
             ★★★★★

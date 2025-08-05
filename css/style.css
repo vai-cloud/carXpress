@@ -377,3 +377,43 @@ body {
 
 
 
+/* Hide all dropdowns initially */
+.menu ul.dropdown-menu,
+.menu ul.dropdown-submenu {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.menu li {
+  position: relative;
+}
+
+/* Show first-level dropdown when hovering on 'New Cars' */
+.menu li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Show nested submenu when hovering on 'Popular Brands' */
+.menu li.dropdown-sub:hover > .dropdown-submenu {
+  display: block;
+  left: 100%;
+  top: 0;
+}
+
+/* Basic link styling */
+.menu a {
+  display: block;
+  padding: 8px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #f5f5f5;
+}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CarXpress</title>
-  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
   <!-- Top header -->
@@ -26,14 +26,15 @@
         <a href="#">New Cars ▾</a>
         <ul class="dropdown-menu">
           <li><a href="./newcar.html">Explore New Cars</a></li>
-          <li><a href="#">Electric Cars</a></li>
-          <li><a href="#">Popular Brands</a>
-          <ul class="dropdown-menu">
-            <li><a href="./maruti-suzuki.html">Maruti Cars</a></li>
-            <li><a href="./tata.html">Tata Cars</a></li>
-          </ul>
-          </li>
-          <li><a href="#">Car Dealer</a></li>
+          
+           <li class="dropdown-sub">
+        <a href="#">Popular Brands ▸</a>
+        <ul class="dropdown-submenu">
+          <li><a href="./maruti-suzuki.html">Maruti Cars</a></li>
+          <li><a href="./tata.html">Tata Cars</a></li>
+        </ul>
+      </li>
+        
         </ul>
       </li>
       <li><a href="./reviews.html">News & Rewiews</a></li>
@@ -148,13 +149,13 @@
         <button>View August offers</button> 
       </div> 
       <div class="car-card" data-price-min="470000" data-price-max="645000"> 
-        <img src="../images/HyundaiCreta.jpg" alt="Renault KWID"> 
+        <a href="./Creta.html"><img src="../images/HyundaiCreta.jpg" alt="Renault KWID"> </a>
         <h4>Hyundai Creta</h4> 
         <p>₹11.11 - 20.50 Lakh*</p> 
         <button>View August offers</button> 
       </div> 
       <div class="car-card" data-price-min="426000" data-price-max="612000"> 
-        <img src="../images/mahindra-bolero.jpg" alt="Maruti S-Presso"> 
+        <a href="./Bolero.html"><img src="../images/mahindra-bolero.jpg" alt="Maruti S-Presso"> </a>
         <h4>Mahindra Bolero</h4> 
         <p>₹9.79 - 10.91 Lakh*</p> 
         <button>View August offers</button> 
@@ -167,6 +168,6 @@
 
 
 
-  <script src="../JS/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
-</html>
++</html>

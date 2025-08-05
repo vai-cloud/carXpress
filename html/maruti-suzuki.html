@@ -8,20 +8,49 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#">CARS</a></li>
-        <li><a href="#">DEALERS</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">IMAGES</a></li>
-        <li><a href="#">VIDEOS</a></li>
-        <li><a href="#">ROAD TEST</a></li>
-        <li><a href="#">OFFERS</a></li>
-        <li><a href="#">SERVICE CENTERS</a></li>
-      </ul>
-    </nav>
+  <!-- Top header -->
+  <header class="top-header">
+    <div class="contact-info">
+      <span> 1-800-123-4567</span>
+      <span> Noida, Sector-62</span>
+    </div>
+    <div class="auth-links">
+      <a href="./login.html">Login/Register</a> 
+    </div>
   </header>
+
+  <!-- Navbar -->
+  <nav class="main-nav">
+    <div class="logo"><a href="#">CarXpress</a></div>
+    <ul class="menu">
+      <li class="dropdown">
+        <a href="#">New Cars ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="./newcar.html">Explore New Cars</a></li>
+          
+           <li class="dropdown-sub">
+        <a href="#">Popular Brands ▸</a>
+        <ul class="dropdown-submenu">
+          <li><a href="./maruti-suzuki.html">Maruti Cars</a></li>
+          <li><a href="./tata.html">Tata Cars</a></li>
+        </ul>
+      </li>
+        
+        </ul>
+      </li>
+      <li><a href="./reviews.html">News & Rewiews</a></li>
+      <li class="dropdown">
+        <a href="#">Pages ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
   <main class="container">
     <section class="title-section">
@@ -39,7 +68,7 @@
             <option disabled selected>Change Brand</option>
             <optgroup label="POPULAR BRANDS">
               <option>Maruti</option>
-              <option value="./car-brand-website/tata/tata.html">Tata</option>
+              <option value="../html/tata.html">Tata</option>
               <option>Kia</option>
               <option>Toyota</option>
               <option>Hyundai</option>
@@ -65,7 +94,7 @@
 
     <section class="cars-listing">
       <div class="car-card">
-        <img src="image3.webp" alt="Maruti Suzuki Swift" />
+        <img src="../images/image3.webp" alt="Maruti Suzuki Swift" />
         <div class="car-details">
           <h3>Maruti Suzuki Swift</h3>
           <p class="price">₹6.49 - 9.64 Lakh*</p>
@@ -81,7 +110,7 @@
 
         <!-- Maruti Suzuki Fronx -->
         <div class="car-card">
-          <img src="Maruti Suzuki Fronx.jpg" alt="Maruti Suzuki FRONX" />
+          <img src="../images/Maruti Suzuki Fronx.jpg" alt="Maruti Suzuki FRONX" />
           <div class="car-details">
             <h3>Maruti Suzuki FRONX</h3>
             <p class="price">₹7.55 - 13.04 Lakh*</p>
@@ -93,7 +122,7 @@
 
         <!-- Maruti Suzuki Ciaz -->
         <div class="car-card">
-          <img src="Maruti Suzuki Ciaz.jpg" alt="Maruti Suzuki Ciaz" />
+          <img src="../images/Maruti Suzuki Ciaz.jpg" alt="Maruti Suzuki Ciaz" />
           <div class="car-details">
             <h3>Maruti Suzuki Ciaz</h3>
             <p class="price">₹6.84 - 10.19 Lakh*</p>
@@ -105,7 +134,7 @@
 
         <!-- Maruti Suzuki Brezza -->
         <div class="car-card">
-          <img src="Maruti Suzuki Brezza.jpg" alt="Maruti Suzuki Brezza" />
+          <img src="../images/Maruti Suzuki Brezza.jpg" alt="Maruti Suzuki Brezza" />
           <div class="car-details">
             <h3>Maruti Suzuki Brezza</h3>
             <p class="price">₹8.99 - 14.14 Lakh*</p>
@@ -117,7 +146,7 @@
 
         <!-- Maruti Suzuki Baleno -->
         <div class="car-card">
-          <img src="Maruti Suzuki Baleno.jpg" alt="Maruti Suzuki Baleno" />
+          <img src="../images/Maruti Suzuki Baleno.jpg" alt="Maruti Suzuki Baleno" />
           <div class="car-details">
             <h3>Maruti Suzuki Baleno</h3>
             <p class="price">₹6.70 - 9.92 Lakh*</p>
@@ -129,7 +158,7 @@
 
         <!-- Maruti Suzuki Wagon R -->
         <div class="car-card">
-          <img src="Maruti Suzuki Wagon R.jpg" alt="Maruti Suzuki Wagon R" />
+          <img src="../images/Maruti Suzuki Wagon R.jpg" alt="Maruti Suzuki Wagon R" />
           <div class="car-details">
             <h3>Maruti Suzuki Wagon R</h3>
             <p class="price">₹5.79 - 7.62 Lakh*</p>
@@ -142,7 +171,7 @@
 
 
       <div class="car-card">
-        <img src="Maruti Suzuki Ertiga.jpg" alt="Maruti Suzuki Ertiga" />
+        <img src="../images/Maruti Suzuki Ertiga.jpg" alt="Maruti Suzuki Ertiga" />
         <div class="car-details">
           <h3>Maruti Suzuki Ertiga</h3>
           <p class="price">₹9.12 - 13.40 Lakh*</p>
@@ -155,7 +184,7 @@
 
     <aside class="sidebar">
       <div class="ad-box">
-        <img src="image1.avif" alt="CarXpress ad" />
+        <img src="../images/image1.avif" alt="CarXpress ad" />
       </div>
       <div class="popular-brands">
         <h4>Popular brands</h4>

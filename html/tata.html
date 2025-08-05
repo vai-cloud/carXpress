@@ -6,20 +6,50 @@
   <link rel="stylesheet" href="../css/tata.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#">CARS</a></li>
-        <li><a href="#">DEALERS</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">IMAGES</a></li>
-        <li><a href="#">VIDEOS</a></li>
-        <li><a href="#">ROAD TEST</a></li>
-        <li><a href="#">OFFERS</a></li>
-        <li><a href="#">SERVICE CENTERS</a></li>
-      </ul>
-    </nav>
+
+  <!-- Top header -->
+  <header class="top-header">
+    <div class="contact-info">
+      <span> 1-800-123-4567</span>
+      <span> Noida, Sector-62</span>
+    </div>
+    <div class="auth-links">
+      <a href="./login.html">Login/Register</a> 
+    </div>
   </header>
+
+  <!-- Navbar -->
+  <nav class="main-nav">
+    <div class="logo"><a href="#">CarXpress</a></div>
+    <ul class="menu">
+      <li class="dropdown">
+        <a href="#">New Cars ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="./newcar.html">Explore New Cars</a></li>
+          
+           <li class="dropdown-sub">
+        <a href="#">Popular Brands ▸</a>
+        <ul class="dropdown-submenu">
+          <li><a href="./maruti-suzuki.html">Maruti Cars</a></li>
+          <li><a href="./tata.html">Tata Cars</a></li>
+        </ul>
+      </li>
+        
+        </ul>
+      </li>
+      <li><a href="./reviews.html">News & Rewiews</a></li>
+      <li class="dropdown">
+        <a href="#">Pages ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
   <main class="container">
     <section class="title-section">
@@ -35,7 +65,7 @@
     <select id="brandSelect">
       <option disabled selected>Change Brand</option>
       <optgroup label="POPULAR BRANDS">
-        <option value="../../maruti-suzuki.html">Maruti</option>
+        <option value="./maruti-suzuki.html">Maruti</option>
         <option>Tata</option>
         <option>Kia</option>
         <option>Toyota</option>
@@ -48,13 +78,11 @@
   </div>
 </div>
 
-
-<!-- 
 <select id="brandSelect">
   <option disabled selected>Choose a Brand</option>
   <optgroup label="POPULAR BRANDS">
-    <option value="maruti-suzuki.html">Maruti</option>
-    <option value="tata/tata.html">Tata</option>
+    <option value="./html/maruti-suzuki.html">Maruti</option>
+    <option value="#">Tata</option>
     <option value="#">Kia</option>
     <option value="#">Toyota</option>
     <option value="#">Hyundai</option>
@@ -62,7 +90,7 @@
     <option value="#">Honda</option>
     <option value="#">Renault</option>
   </optgroup>
-</select> -->
+</select> 
 
 
 
@@ -75,7 +103,7 @@
 
     <section class="cars-listing">
       <div class="car-card">
-        <img src="Tata Nexon.jpg" alt="Tata Nexon" />
+        <img src="../images/Tata Nexon.jpg" alt="Tata Nexon" />
         <div class="car-details">
           <h3>Tata Nexon</h3>
           <p class="price">₹7.59 - 13.14 Lakh*</p> 
@@ -86,7 +114,7 @@
       </div>
 
       <div class="car-card">
-        <img src="Tata Harrier.jpg" alt="Tata Harrier" />
+        <img src="../images/Tata Harrier.jpg" alt="Tata Harrier" />
         <div class="car-details">
           <h3>Tata Harrier</h3>
           <p class="price">₹14.99 - 22.00 Lakh*</p>
@@ -97,7 +125,7 @@
       </div>
 
       <div class="car-card">
-        <img src="Tata Tiago.jpg" alt="Tata Tiago" />
+        <img src="../images/Tata Tiago.jpg" alt="Tata Tiago" />
         <div class="car-details">
           <h3>Tata Tiago</h3>
           <p class="price">₹4.99 - 7.50 Lakh*</p>
@@ -108,7 +136,7 @@
       </div>
 
       <div class="car-card">
-        <img src="Tata Altroz.jpeg" alt="Tata Altroz" />
+        <img src="../images/Tata Altroz.jpeg" alt="Tata Altroz" />
         <div class="car-details">
           <h3>Tata Altroz</h3>
           <p class="price">₹5.29 - 9.29 Lakh*</p>
@@ -121,7 +149,7 @@
 
     <aside class="sidebar">
       <div class="ad-box">
-        <img src="tata.avif" alt="CarXpress ad" />
+        <img src="../images/tata.avif" alt="CarXpress ad" />
       </div>
       <div class="popular-brands">
         <h4>Popular brands</h4>

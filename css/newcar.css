@@ -1,87 +1,114 @@
-:root {
-  --orange:#ff6f1f;
-  --bg:#f5f7fa;
-  --radius:8px;
-  --dark:#1f2d44;
-  --shadow:0 20px 60px rgba(13,31,60,0.08);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+body { 
+  margin:0; 
+  font-family: Arial, sans-serif; 
 }
+.top-header { 
+  background:#333; 
+  color:#fff; font-size:.9rem;
+  padding:5px 20px; display:flex; 
+  justify-content:space-between; 
+}
+.top-header a { 
+  color:#ddd; 
+  text-decoration:none; 
+  margin-left:5px; }
 
-* { box-sizing:border-box; }
-body { margin:0; background: var(--bg); color:#333; }
-
-.top-header {
-  background:#222;
-  color:#fff;
-  padding:6px 20px;
-  display:flex;
+.main-nav { 
+  display:flex; 
   justify-content:space-between;
-  font-size:0.85rem;
+  align-items:center; 
+  padding:15px 20px; 
+  background:#fff; 
+  border-bottom:1px solid #eee; 
 }
-.top-header .left span { margin-right:12px; }
-.top-header .right a {
-  color:#ccc;
-  text-decoration:none;
-  margin:0 4px;
-  font-weight:500;
+.logo a { 
+  font-size:1.5rem; 
+  text-decoration:none; 
+  color:#0D1F3C; 
+}
+.menu { 
+  list-style:none; 
+  display:flex; 
+  gap:15px; 
+  margin:0; 
+}
+.menu li a { 
+  text-decoration:none; 
+  color:#333; 
+  padding:5px; 
 }
 
-.navbar {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:10px 25px;
-  background:#fff;
-  border-bottom:1px solid #e6e9ef;
-  position:sticky;
-  top:0;
-  z-index:5;
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 10px 0;
+  z-index: 1000;
 }
-.logo a {
-  font-size:1.5rem;
-  font-weight:700;
-  text-decoration:none;
-  color:#0D1F3C;
+.dropdown-menu li {
+  width: 100%;
 }
-.nav-menu {
-  list-style:none;
-  display:flex;
-  gap:25px;
-  margin:0;
-  padding:0;
-  align-items:center;
-  font-size:14px;
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  font-weight: 400;
 }
-.nav-menu li { position: relative; }
-.nav-menu a {
-  text-decoration:none;
-  color: var(--dark);
-  font-weight:600;
-  padding:6px 8px;
+.dropdown-menu li a:hover {
+  background: #f5f5f5;
 }
-.nav-menu a:hover { color: var(--orange); }
-.has-dropdown:hover .dropdown { display:block; }
-.dropdown {
-  position:absolute;
-  top:110%;
-  left:0;
-  background:#fff;
-  border-radius:6px;
-  padding:6px 0;
-  min-width:180px;
-  box-shadow:0 12px 32px rgba(0,0,0,0.1);
-  display:none;
-  z-index:20;
+
+/* Hover to show dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
-.dropdown li a {
-  display:block;
-  padding:10px 16px;
-  color:#333;
-  font-size:14px;
+
+/* Hide all dropdowns initially */
+.menu ul.dropdown-menu,
+.menu ul.dropdown-submenu {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  min-width: 180px;
+  z-index: 1000;
 }
-.dropdown li a:hover {
-  background:#f5f5f5;
+
+.menu li {
+  position: relative;
 }
+
+/* Show first-level dropdown when hovering on 'New Cars' */
+.menu li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Show nested submenu when hovering on 'Popular Brands' */
+.menu li.dropdown-sub:hover > .dropdown-submenu {
+  display: block;
+  left: 100%;
+  top: 0;
+}
+
+/* Basic link styling */
+.menu a {
+  display: block;
+  padding: 8px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #f5f5f5;
+}
+
 
 /* Hero */
 .hero {

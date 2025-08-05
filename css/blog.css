@@ -1,62 +1,113 @@
-.top-header {
-background-color: #333;
-color: #fff;
-padding: 5px 20px;
-display: flex;
-justify-content: space-between;
-font-size: 14px;
+body { 
+  margin:0; 
+  font-family: Arial, sans-serif; 
+}
+.top-header { 
+  background:#333; 
+  color:#fff; font-size:.9rem;
+  padding:5px 20px; display:flex; 
+  justify-content:space-between; 
+}
+.top-header a { 
+  color:#ddd; 
+  text-decoration:none; 
+  margin-left:5px; }
+
+.main-nav { 
+  display:flex; 
+  justify-content:space-between;
+  align-items:center; 
+  padding:15px 20px; 
+  background:#fff; 
+  border-bottom:1px solid #eee; 
+}
+.logo a { 
+  font-size:1.5rem; 
+  text-decoration:none; 
+  color:#0D1F3C; 
+}
+.menu { 
+  list-style:none; 
+  display:flex; 
+  gap:15px; 
+  margin:0; 
+}
+.menu li a { 
+  text-decoration:none; 
+  color:#333; 
+  padding:5px; 
 }
 
-.top-header a {
-color: #fff;
-margin-left: 10px;
-text-decoration: none;
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.dropdown-menu li {
+  width: 100%;
+}
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  font-weight: 400;
+}
+.dropdown-menu li a:hover {
+  background: #f5f5f5;
 }
 
-.main-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 12px 20px;
-background-color: #fff;
-border-bottom: 1px solid #ccc;
+/* Hover to show dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
-.logo {
-font-size: 24px;
-font-weight: bold;
-color: #003366;
+/* Hide all dropdowns initially */
+.menu ul.dropdown-menu,
+.menu ul.dropdown-submenu {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  min-width: 180px;
+  z-index: 1000;
 }
 
-.navbar ul {
-list-style: none;
-display: flex;
-gap: 20px;
-margin: 0;
-padding: 0;
+.menu li {
+  position: relative;
 }
 
-.navbar ul li a {
-text-decoration: none;
-font-weight: 500;
-color: #000;
-transition: color 0.3s;
+/* Show first-level dropdown when hovering on 'New Cars' */
+.menu li.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
-.navbar ul li a:hover {
-color: #007bff;
+/* Show nested submenu when hovering on 'Popular Brands' */
+.menu li.dropdown-sub:hover > .dropdown-submenu {
+  display: block;
+  left: 100%;
+  top: 0;
 }
 
+/* Basic link styling */
+.menu a {
+  display: block;
+  padding: 8px 20px;
+  color: #333;
+  text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
+.menu a:hover {
+  background-color: #f5f5f5;
+}
 
 
 
